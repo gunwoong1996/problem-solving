@@ -5,7 +5,6 @@
 
 chess=[1,1,2,2,2,8] #정해진 말의 수
 
-
 print("가지고있는 하얀말의 수:")
 White = list(map(int,input().split()))
 
