@@ -1,7 +1,6 @@
-#별 찍기 - 1 
-
+#별 찍기 - 2
 star = int(input())
 
 for i in range(star):
     i += 1
-    print("*" * i)
+    print(" " * (star-i) + "*" *i)
