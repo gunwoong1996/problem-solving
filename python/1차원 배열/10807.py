@@ -9,4 +9,4 @@ v = int(input())  # 찾고자 하는 숫자
 count = numbers.count(v)
 
 # 결과 출력
-print(count)
+print(count) #
