@@ -1,6 +1,5 @@
-listdata = ['a']
-if 'a'in listdata:
-    print('a가있다')
-
-else:
-    print('a가없다')
+s=[1,2,7,4,5]
+for x in s:
+    print(x)
+    if x>=3:
+        break
