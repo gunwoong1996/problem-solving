@@ -1,5 +1,8 @@
-s=[1,2,7,4,5]
+s=[1,2,3]
 for x in s:
     print(x)
-    if x>=3:
+    if x>3:
         break
+
+else:
+    print("짠")
