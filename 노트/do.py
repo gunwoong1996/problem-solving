@@ -1,8 +1,8 @@
-s=[1,2,3]
-for x in s:
-    print(x)
-    if x>3:
-        break
+val = None
+condition = 1
 
+if condition == 1:
+    val = [1,2,3]
+    print(val)
 else:
-    print("짠")
+    val =  'hi'
