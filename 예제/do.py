@@ -6,3 +6,5 @@ if condition == 1:
     print(val)
 else:
     val =  'hi'
+
+print('go')
