@@ -61,3 +61,36 @@ bird1 = Bird("앵무")
 dog1.sound()
 cat1.sound()
 bird1.sound()
+
+
+#다형성
+
+# 같은 이름의 메서드지만, 객체 타입에 따라 다르게 동작하는 것!
+
+# 즉, "같은 메시지 → 다른 반응"
+
+class Animal:
+    def sound(self):
+        print("어떤 동물일까?")
+
+class Dog(Animal):
+    def sound(self):
+        print("멍멍!")
+
+class Cat(Animal):
+    def sound(self):
+        print("야옹!")
+
+class Bird(Animal):
+    def sound(self):
+        print("짹짹!")
+
+class Tiger(Animal):
+    def sound(self):
+        print("어흥!")
+
+# 다형성 예시
+animals = [Dog(), Cat(), Bird(),Tiger()]
+
+for a in animals:
+    a.sound()
