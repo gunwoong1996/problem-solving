@@ -1,3 +1,3 @@
-a = input()
+a,b = input().split(":")
 
-print(a,a,a)
+print(a,b,sep=":")
