@@ -1,10 +1,11 @@
 
-a = int(input())
+r,g,b = map(int,input().split())
+count = 0
 
-for i in range(1,a+1):
-    if i % 10 == 3 or i % 10 == 6 or i % 10 == 9:
-        print("X",end=' ')
-    else:
-        print(i,end=' ')
-
-    
+for i in range(0,r):
+    for j in range(0,g):
+        for k in range(0,b):
+            print(i,j,k)
+            count += 1
+           
+print(count)
