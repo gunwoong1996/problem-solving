@@ -1,7 +1,4 @@
 
-n = int(input())
+a,d,n = map(int,input().split()) #시작 값,등차,몇번 째 수
 
-for i in range(1,n+1):
-    if i % 3 == 0:
-        continue
-    print(i,end=' ')
+print(a+(n-1)*d)
