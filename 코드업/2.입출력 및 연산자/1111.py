@@ -1,3 +1,3 @@
 n = int(input())
 
-print(n)
+print(f"{n}%")
