@@ -1,7 +1,11 @@
-a,b,c = map(int,input().split())
+t,g=map(int,input().split())
 
-if min(a,b,c)<= 170:
-    print("CRASH")
+i=1
 
-else:
-    print("PASS")
+for i in range(t,90):
+   i+=1
+   if i % 5 == 0 :
+      g += 1 
+
+
+print(g)
