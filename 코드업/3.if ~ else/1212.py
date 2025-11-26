@@ -1,16 +1,9 @@
-menu = {
-    1: 400,   # 치즈버거
-    2: 340,   # 야채버거
-    3: 170,   # 우유
-    4: 100,   # 계란말이
-    5: 70     # 샐러드
-}
+num = list(map(int,input().split()))
 
-a, b = map(int, input().split()) 
+num.sort()
 
-total = menu[a] + menu[b]
+if num[0]+num[1]>num[2]:
+    print("yes")
 
-if total > 500:
-    print("angry")
 else:
-    print("no angry")
+    print("no")
