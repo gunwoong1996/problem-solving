@@ -7,6 +7,6 @@ for ch in cipher:
         result += ch
     else:
         # ch 를 a~z 범위로 암호 해독
-        result += chr((ord(ch) - ord('a') + 3) % 26 + ord('a'))
+        result += chr((ord(ch) - ord('a') - 3) % 26 + ord('a'))
 
 print(result)
