@@ -1,12 +1,8 @@
-cipher = input()
+a,b = map(int,input().split()) #구구단 시작단과 끝단
 
-result = ""
 
-for ch in cipher:
-    if ch == " ":               # 공백은 그대로
-        result += ch
-    else:
-        # ch 를 a~z 범위로 암호 해독
-        result += chr((ord(ch) - ord('a') + 3) % 26 + ord('a'))
+for i in range(a,b+1):
+    for j in range(1,10):
+        print(f"{i}*{j}={i*j}")
+   
 
-print(result)
