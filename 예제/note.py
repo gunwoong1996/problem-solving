@@ -35,3 +35,13 @@ for c in range(10): #범위 함수
 val = None
 
 #==================================
+
+print(abs(-5)) # 5의 절댃값
+
+print(pow(4,2)) # 4 * 
+
+print(max(5,12)) # 12 최댓값
+
+print(min(5,12)) # 5 최솟값
+
+print(round(3.14)) # 3 반올림
