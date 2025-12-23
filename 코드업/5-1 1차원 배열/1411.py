@@ -1,12 +1,8 @@
-num = input()
+n = int(input())
 
-cnt1 = 0
-cnt2 = 0
+cards_sum = 0
+for _ in range(n - 1):
+    cards_sum += int(input())
 
-for i in num:
-    if i == '(':
-        cnt1 += 1
-    elif i == ')':
-        cnt2 += 1
-
-print(cnt1,cnt2)
+total = n * (n + 1) // 2
+print(total - cards_sum)
