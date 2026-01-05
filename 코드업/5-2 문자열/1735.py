@@ -1,5 +1,5 @@
 n = int(input())
 
 
-for i in range (0,n):
+for _ in range(n):
     print("hello")
