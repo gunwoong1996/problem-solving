@@ -16,3 +16,9 @@ print(s[-1:])
 
 s.lower()
 s.replace("hello","hihi")
+
+#===============
+
+user = {"id": "kim","age":20}
+
+print(user["age"])
