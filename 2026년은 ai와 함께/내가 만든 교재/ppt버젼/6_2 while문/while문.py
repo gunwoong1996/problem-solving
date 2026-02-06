@@ -1,44 +1,21 @@
-"""
-for i in range(3):
-    print(i)
+i = 0
+while i < 5:
+    i += 1
+    if i == 3:
+        continue
+    print(i)  #continue = pass / break = end
 
-arr = [10, 20, 30]
-for x in arr:
-    print(x)
+found = False
+i = 0
+while i < 5 and not found:
+    if i == 4:
+        found = True
+    i += 1
 
-s = "abc"
-for ch in s:
-    print(ch)
-
-for i in range(10):
-    if i == 5:
+while True:
+    print('1. 시작 2. 종료')
+    sel = input()
+    if sel == '2':
         break
-    print(i)
-"""
 
-for i in range(5):
-    if i == 2:
-        continue
-    print(i)
-
-# while True:
-#     x = input()
-#     if x == "q":
-#         break
-
-
-for i in range(2):
-    for j in range(3):
-        print(i, j)
-
-#====================================
-
-for i in range(3):
-    if i == 1:
-        pass
-    print(i)
-
-for i in range(3):
-    if i == 1:
-        continue
-    print(i)    
+#종료 조건 설계 중요
