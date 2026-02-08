@@ -1,21 +1,55 @@
-i = 0
-while i < 5:
-    i += 1
-    if i == 3:
-        continue
-    print(i)  #continue = pass / break = end
+def add(a, b):
+    return a + b
 
-found = False
-i = 0
-while i < 5 and not found:
-    if i == 4:
-        found = True
-    i += 1
+print(add(1,2))
 
-while True:
-    print('1. 시작 2. 종료')
-    sel = input()
-    if sel == '2':
-        break
 
-#종료 조건 설계 중요
+def is_even(n):
+    return n % 2 == 0
+
+print(is_even(3))
+
+
+
+def list_sum(arr):
+    total = 0
+    for x in arr:
+        total += x
+    return total
+
+result = list_sum([1, 2, 3, 4])
+print(result)
+
+
+def strlen(s):
+    return len(s)
+
+print(strlen("sdqd"))
+
+
+def greet(name='손님'):
+    print(name)
+
+print(greet("민수"))
+
+def calc(a, b):
+    return a+b, a-b
+
+print(calc(2,3))
+
+
+def grade(score):
+    if score >= 60:
+        return '합격'
+    return '불합격'
+
+print(grade(59))
+
+
+def read_int():
+    return int(input())
+
+x = read_int()
+print(x + 10)
+
+
